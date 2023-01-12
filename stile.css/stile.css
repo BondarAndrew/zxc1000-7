@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1220px;
+  margin: auto;
+}
+
+body {
+  font-family: Noto Sans;
+}
+
+.header {
+  min-height: 1175px;
+  background-image: url("/images/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding-top: 53px;
+  box-sizing: border-box;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-link {
+  text-decoration: none;
+  color: rgb(226, 226, 226);
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.header-links {
+  display: flex;
+  gap: 55px;
+}
+
+@media (max-width: 616px) {
+  .header-menu {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+
+@media (max-width: 373px) {
+  .header-links {
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+}
+
+.header-title {
+  font-family: "Noto Sans";
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 70px;
+  color: #ffffff;
+  text-align: center;
+  max-width: 706px;
+  margin: auto;
+  margin-top: 138px;
+  position: relative;
+  z-index: 0;
+}
+
+.header-title::after {
+  content: "";
+  display: block;
+  width: 400px;
+  height: 96px;
+  background: url("../images/line.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: -18px;
+  right: -20px;
+  z-index: -1;
+}
+
+.header-subtitle {
+  font-family: "Noto Sans";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #c6c0c0;
+  text-align: center;
+  max-width: 867px;
+  margin: auto;
+  margin-top: 28px;
+  margin-bottom: 48px;
+}
+
+.input-wrapper {
+  display: block;
+  max-width: 493px;
+  position: relative;
+  margin: auto;
+}
+
+.input {
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 16px 19px;
+  box-sizing: border-box;
+  background: rgba(222, 222, 222, 0.2);
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 45px;
+}
+
+.input-button {
+  height: 48px;
+  width: 48px;
+  border-radius: 100px;
+  border: none;
+  background-color: #f08c00;
+  background-image: url("/icons/serch.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 24px;
+  position: absolute;
+  right: 9px;
+  top: 8px;
+}
